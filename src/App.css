@@ -1,0 +1,129 @@
+/* Main container */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f4f4f9;
+}
+
+/* Square for the Tic-Tac-Toe grid */
+.square {
+  border: 1px solid #ccc;
+  flex-grow: 1;
+  min-height: 70px;
+  min-width: 70px;
+  max-width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.square:hover {
+  background-color: #e0e0e0;
+}
+
+/* Grid container for rows */
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-top: 20px;
+}
+
+/* Column for each part of the Tic-Tac-Toe grid */
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 210px;
+  gap: 4px;
+}
+
+/* Button styles */
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Input styles */
+input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  max-width: 90%;
+  font-size: 16px;
+}
+
+/* Connection div container */
+.connection {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px; /* Increased gap for better spacing between elements */
+  max-width: 300px;
+  margin: 20px auto;
+  background-color: #fff; /* White background for better separation */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Connection text styles */
+.connection span {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Make input and button look more consistent */
+input, button {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+}
+
+input {
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Client log text */
+.client-log {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+  color: #333;
+}
